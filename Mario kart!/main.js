@@ -2,8 +2,9 @@
 
 'use strict';
 //event listener
-
 document.getElementById('generate').addEventListener('click' , itemCollect);
+document.getElementById('nTime').addEventListener('click' , codeRun);
+document.getElementById('random').addEventListener('click', itemCollect);
 let bananas = 0;
 let shells = 0;
 let stars = 0;
@@ -11,6 +12,7 @@ let golden = 0;
 let bill = 0; 
 let firstClick = true;
 let racep;
+
 //event function 
 
 function itemCollect() {
@@ -18,6 +20,7 @@ function itemCollect() {
  
     let randNum = Math.random();
     let racer = document.getElementById('racer').value;
+    let n =  document.getElementById('n').value;
     if (firstClick == true){
         racep = Number(racer);
         firstClick = false;
@@ -27,6 +30,7 @@ function itemCollect() {
 
     console.log("racer: " + racer);
     console.log("randNum: " + randNum);
+    console.log('results: ' + document.getElementById('results').innerHTML);
     
 
     // simulating results...
@@ -61,7 +65,7 @@ function itemCollect() {
         document.getElementById('results').innerHTML += '<img src = "Gmush.png">';
         racep -=1;
 
-    } else if (randNum == 0.01 && racer >=1 && racer <7) {
+    } else if (randNum <= 0.01 && racer >=1 && racer <7) {
         console.log('bullet bill');
         bill +=1;
         document.getElementById('bill').innerHTML = bill;
@@ -112,13 +116,19 @@ function itemCollect() {
     } 
 
 
+}
 
 
+//will run until you get 10 bullet bills
+function codeRun() {
+    console.log('test');
+    let nn = Number(document.getElementById('n').value);
+    for(let i = 0 ; i < nn ; i++) {
+        itemCollect();
+   
+    }
+            
+        
+        
 
-    
-
-
-
-
-    
 }

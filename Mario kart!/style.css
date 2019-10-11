@@ -20,7 +20,7 @@ img {
     width:50px;
 }
 
-#generate {
+#generate , #nTime  {
     border:5px dashed rgb(128, 240, 175);
     font-size:20px;
     padding:15px;
