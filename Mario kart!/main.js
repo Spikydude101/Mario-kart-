@@ -119,7 +119,7 @@ function itemCollect() {
 }
 
 
-//will run until you get 10 bullet bills
+//will run simulation a specific number of times when typed by the user 
 function codeRun() {
     console.log('test');
     let nn = Number(document.getElementById('n').value);
