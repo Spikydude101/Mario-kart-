@@ -40,21 +40,21 @@ function itemCollect() {
         console.log('banana');
         bananas +=1;
         document.getElementById('bananas').innerHTML = bananas;
-        document.getElementById('results').innerHTML += '<img src = "Banana.png">';
+        document.getElementById('results').innerHTML += '<img src = "images/Banana.png">';
         racep += 1;
 
     } else if (randNum > 0.15 &&  randNum <= 0.35 && racer >=1 && racer <7 ) {
         console.log('shell');
         shells +=1;
         document.getElementById('shells').innerHTML = shells;
-        document.getElementById('results').innerHTML += '<img src = "Gshell.png">';
+        document.getElementById('results').innerHTML += '<img src = "images/Gshell.png">';
         racep +=0;
 
     } else if (randNum > 0.05 && randNum <= 0.15 && racer >=1 && racer <7) {
         console.log('star');
         stars +=1;
         document.getElementById('stars').innerHTML = stars;
-        document.getElementById('results').innerHTML  += '<img src = "star.png">';
+        document.getElementById('results').innerHTML  += '<img src = "images/star.png">';
         racep -=2;
 
 
@@ -62,14 +62,14 @@ function itemCollect() {
         console.log('golden mushroom');
         golden +=1;
         document.getElementById('golden').innerHTML = golden;
-        document.getElementById('results').innerHTML += '<img src = "Gmush.png">';
+        document.getElementById('results').innerHTML += '<img src = "images/Gmush.png">';
         racep -=1;
 
     } else if (randNum <= 0.01 && racer >=1 && racer <7) {
         console.log('bullet bill');
         bill +=1;
         document.getElementById('bill').innerHTML = bill;
-        document.getElementById('results').innerHTML += '<img src = "Mrbill.png">';
+        document.getElementById('results').innerHTML += '<img src = "images/Mrbill.png">';
         racep-=2;
     }
 
@@ -80,21 +80,21 @@ function itemCollect() {
         console.log('banana');
         bananas +=1;
         document.getElementById('bananas').innerHTML = bananas;
-        document.getElementById('results').innerHTML += '<img src = "Banana.png">';
+        document.getElementById('results').innerHTML += '<img src = "images/Banana.png">';
         racep-=1;
 
     } else if (randNum <=0.05   && racer >=7 && racer <=12 ) {
         console.log('shell');
         shells +=1;
         document.getElementById('shells').innerHTML = shells;
-        document.getElementById('results').innerHTML += '<img src = "Gshell.png">';
+        document.getElementById('results').innerHTML += '<img src = "images/Gshell.png">';
         racep-=1;
 
     } else if (randNum >0.05 && randNum <0.26  && racer >7 && racer <=12) {
         console.log('star');
         stars +=1;
         document.getElementById('stars').innerHTML = stars;
-        document.getElementById('results').innerHTML  += '<img src = "star.png">';
+        document.getElementById('results').innerHTML  += '<img src = "images/star.png">';
         racep-=1;
 
 
@@ -102,14 +102,14 @@ function itemCollect() {
         console.log('golden mushroom');
         golden +=1;
         document.getElementById('golden').innerHTML = golden;
-        document.getElementById('results').innerHTML += '<img src = "Gmush.png">';
+        document.getElementById('results').innerHTML += '<img src = "images/Gmush.png">';
         racep-=1;
 
     } else if ( randNum >0.61 && racer >=7 && racer <=12) {
         console.log('bullet bill');
         bill +=1;
         document.getElementById('bill').innerHTML = bill;
-        document.getElementById('results').innerHTML += '<img src = "Mrbill.png">';
+        document.getElementById('results').innerHTML += '<img src = "images/Mrbill.png">';
         racep-=1;
 
 
